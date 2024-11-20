@@ -1,0 +1,13 @@
+<div *ngIf="cartItems.length > 0" class="cart">
+  <div *ngFor="let item of cartItems" class="cart-item">
+    <p>{{ item.name }} (₹{{ item.price }})</p>
+    <div class="buttons">
+      <button (click)="increaseQuantity(item)" class="count">+</button>
+      <p>{{ item.quantity }}</p>
+      <button (click)="decreaseQuantity(item)" class="count">-</button>
+    </div>
+  </div>
+  <div class="total">Total: ₹{{ total }}</div>
+  <button routerLink="/checkout" class="buyNow">Buy Now</button>
+</div>
+<p *ngIf="cartItems.length === 0">Cart is empty.</p>

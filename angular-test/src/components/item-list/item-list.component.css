@@ -1,0 +1,46 @@
+.item-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.item {
+  width: 240px;
+  height: 240px;
+  border: 1px solid #f8b400;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  display: grid;
+  justify-content: space-around;
+}
+
+.addToCart {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #f8b400;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  font-size: 26px;
+  width: 500px;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}

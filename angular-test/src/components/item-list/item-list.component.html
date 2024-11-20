@@ -1,0 +1,16 @@
+<div class="search-bar">
+  <input
+    type="text"
+    [(ngModel)]="searchQuery"
+    placeholder="Search"
+    (input)="onSearch()"
+  />
+  <button (click)="onSearch()">Search</button>
+</div>
+<div class="item-list">
+  <div class="item" *ngFor="let item of items">
+    <p>{{ item.name }}</p>
+    <p>₹{{ item.price }}</p>
+    <button (click)="addToCart(item)" class="addToCart">Add to Cart</button>
+  </div>
+</div>
